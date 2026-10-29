@@ -1,4 +1,3 @@
-
 package com.sena.biblioteca.ui.navegation
 
 import kotlinx.serialization.Serializable
