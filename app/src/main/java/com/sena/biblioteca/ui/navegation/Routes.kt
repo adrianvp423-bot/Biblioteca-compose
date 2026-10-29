@@ -1,3 +1,4 @@
+
 package com.sena.biblioteca.ui.navegation
 
 import kotlinx.serialization.Serializable
@@ -15,9 +16,5 @@ data class DetalleLibro
 @Serializable
 data class Confirmacion( val nombreLibro: String,
                          val fecha:String)
-
-
-// me falta
-
 
 
