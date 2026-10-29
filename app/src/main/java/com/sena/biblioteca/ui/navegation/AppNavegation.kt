@@ -32,4 +32,15 @@ fun AppNavigation() {
                 }
             )
         }
+        composable<DetalleLibroRoute> { backStackEntry ->
+            val route: DetalleLibroRoute = backStackEntry.toRoute()
+            DetallesLibros(
+                nombreLibro = route.nombreLibro,
+                onVolver = {
+                    navController.popBackStack()
+                }
+            )
+        }
+    }
+}
 
