@@ -17,7 +17,3 @@ data class Confirmacion( val nombreLibro: String,
                          val fecha:String)
 
 
-
-
-
-
