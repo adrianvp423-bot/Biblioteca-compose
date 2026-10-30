@@ -1,0 +1,43 @@
+
+package com.sena.biblioteca.ui.section
+
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+@Composable
+fun StatusSection(
+    nombreLibro: String,
+    fecha: String
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme
+                .secondaryContainer
+        )
+    ) {
+        Column(
+            modifier = Modifier.padding(20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "✓",
+                style = MaterialTheme.typography.displayMedium,
+                color = MaterialTheme.colorScheme.primary
+            )
+
+            Text(
+                text = "¡Reserva Exitosa!",
+                style = MaterialTheme.typography.titleLarge
+            )
+
+            Spacer(Modifier.height(12.dp))
+            Text("Libro: $nombreLibro")
+            Text("Fecha: $fecha")
+        }
+    }
+}
