@@ -10,7 +10,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun Home(
-    onIrLibros: () -> Unit
+    onIrLibros: () -> Unit,
 ) {
     Column(
         modifier = Modifier.fillMaxSize(),
