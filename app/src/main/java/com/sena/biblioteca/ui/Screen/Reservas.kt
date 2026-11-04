@@ -11,38 +11,29 @@ import androidx.compose.ui.unit.dp
 fun Reservas(
     nombreLibro: String,
     fecha: String,
-    onVolverInicio: () -> Unit
+    onIrMisReservas: () -> Unit
 ) {
-    Surface(
-        modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colorScheme.background
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(16.dp),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                text = "¡Reserva Exitosa!",
-                style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.primary
-            )
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(
-                text = "Libro: $nombreLibro",
-                style = MaterialTheme.typography.bodyLarge
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = "Fecha: $fecha",
-                style = MaterialTheme.typography.bodyLarge
-            )
-            Spacer(modifier = Modifier.height(24.dp))
-            Button(onClick = onVolverInicio) {
-                Text(text = "Volver al Inicio")
-            }
+        Text(
+            text = "¡Reserva Exitosa!",
+            style = MaterialTheme.typography.headlineMedium
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Libro: $nombreLibro")
+        Text("Fecha: $fecha")
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Button(onClick = onIrMisReservas) {
+            Text("Ver Mis Reservas")
         }
     }
 }
