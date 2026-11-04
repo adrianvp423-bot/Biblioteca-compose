@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.sena.biblioteca.app-debug-40:/drawable_android.jpg.flat",
+        "source": "com.sena.biblioteca.app-main-42:/drawable/android.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Sena\\.gradle\\daemon\\9.6.0\\com.sena.biblioteca.app-debug-40:\\drawable_clean_code.webp.flat",
+        "source": "C:\\Users\\Sena\\.gradle\\daemon\\9.6.0\\com.sena.biblioteca.app-main-42:\\drawable\\clean_code.webp"
+    }
+]

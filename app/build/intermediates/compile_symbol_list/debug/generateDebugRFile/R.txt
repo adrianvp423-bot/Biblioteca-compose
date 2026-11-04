@@ -1,0 +1,2 @@
+int drawable android 0x0
+int drawable clean_code 0x0
